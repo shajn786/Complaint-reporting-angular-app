@@ -22,7 +22,7 @@ export class AdminLoginComponent {
     console.log(data)
     if(this.username == "admin" && this.password == "12345")
     {
-      this.route.navigate(["/dashboard"])
+      this.route.navigate(["/viewallcomplaints"])
     }else{
       alert("inalid credential")
 

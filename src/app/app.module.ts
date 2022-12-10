@@ -12,6 +12,9 @@ import { RegistrationComponent } from './registration/registration.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { ViewProfileComponent } from './view-profile/view-profile.component';
 import { UsernavbarComponent } from './usernavbar/usernavbar.component';
+import { UsercomplaintComponent } from './usercomplaint/usercomplaint.component';
+import { ViewallComplaintsComponent } from './viewall-complaints/viewall-complaints.component';
+import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component';
 
 const myRoutes : Routes=[
 
@@ -29,6 +32,12 @@ const myRoutes : Routes=[
   },
   {
     path:"viewprofile",component:ViewProfileComponent
+  },
+  {
+    path:"usercomplaints",component:UsercomplaintComponent
+  },
+  {
+    path:"viewallcomplaints",component:ViewallComplaintsComponent
   }
 
 
@@ -43,7 +52,10 @@ const myRoutes : Routes=[
     RegistrationComponent,
     AdminDashboardComponent,
     ViewProfileComponent,
-    UsernavbarComponent
+    UsernavbarComponent,
+    UsercomplaintComponent,
+    ViewallComplaintsComponent,
+    AdminnavbarComponent
   ],
   imports: [
     BrowserModule,

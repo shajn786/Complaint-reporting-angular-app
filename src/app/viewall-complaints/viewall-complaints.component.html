@@ -1,0 +1,48 @@
+<app-adminnavbar></app-adminnavbar>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                   
+                    <table class="table">
+                        <thead>
+                          <tr>
+                          
+                          
+                            <th scope="col">User Name</th>
+                            
+                            <th scope="col">Email</th>
+                            <th scope="col">Phone Number</th>
+                            <th scope="col">Complaints</th>
+
+                           
+                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let i of data" >
+                            
+                            
+                            <td>{{i.name}}</td>
+                            <td>{{i.email}}</td>
+                            <td>{{i.phno}}</td>
+                            <td>{{i.complaint}}</td>
+                            
+                           
+                            <td></td>
+                            
+                           
+                          </tr>
+                        
+                        </tbody>
+                      </table>     
+              
+                    
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
